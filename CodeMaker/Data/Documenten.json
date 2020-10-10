@@ -1,0 +1,14 @@
+﻿[
+  {
+    "doctype":"meetstaat",
+    "subjecttype":"architectuur"
+    },
+  {
+    "doctype":"verslag",
+    "subjecttype":"stabiliteit"
+    },
+  {
+    "doctype":"bestek",
+    "subjecttype":"technieken"
+    }
+]
