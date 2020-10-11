@@ -1,14 +1,17 @@
 ﻿[
   {
     "subjecttype":"stabiliteit",
-    "subjectabr":"STR"
+    "subjecteng":"structural",
+    "subjectabr":"ST"
     },
   {
     "subjecttype":"architectuur",
-    "subjectabr":"ARC"
+    "subjecteng":"achitecture",
+    "subjectabr":"AR"
      },
   {
     "subjecttype":"technieken",
-    "subjectabr":"MEP"
+    "subjecteng":"mechanical MEP all",
+    "subjectabr":"MA"
     }
 ]

@@ -21,6 +21,21 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <!--> Template LABEL BORDER rechte hoeken<-->
+        <Style x:Key="LabelBorder" TargetType="Label">
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Label">
+                        <Border BorderBrush="DarkGray" BorderThickness="1" >
+                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         
         <!--> Template COMBOBOX<-->
         <Style x:Key="ComboboxStyle" TargetType="ComboBox">

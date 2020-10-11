@@ -10,37 +10,37 @@ namespace CodeMaker
 {
     public class ViewModel:ViewModelBase
     {
-		private Document _selectedProject;
+		private Project _selectedProject;
 		private Document _selectedDocument;
-		private Document _selectedSubject;
+		private Subject _selectedSubject;
 
-		private DocumentList _projectList = null;
-		private ObservableCollection<Document> _currentProjects= null;
+		private ProjectList _projectList = null;
+		private ObservableCollection<Project> _currentProjects= null;
 		private DocumentList _documentList=null;
 		private ObservableCollection<Document>_currentDocuments=null;
-		private DocumentList _subjectList = null;
-		private ObservableCollection<Document> _currentSubjects = null;
+		private SubjectList _subjectList = null;
+		private ObservableCollection<Subject> _currentSubjects = null;
 
 
 		#region ComboboxLijst_Project
 
-		public DocumentList ProjectList
+		public ProjectList ProjectList
 		{
 			get
 			{
-				_projectList ??= new DocumentList();
+				_projectList ??= new ProjectList();
 				return _projectList;
 			}
 			set { _projectList = value; }
 		}
-		public ObservableCollection<Document> CurrentProjects
+		public ObservableCollection<Project> CurrentProjects
 		{
 			get
 			{
-				_currentProjects??= new ObservableCollection<Document>(DocumentList.Documents.Select(s => s).ToList());
+				_currentProjects??= new ObservableCollection<Project>(ProjectList.Projects.Select(s => s).ToList());
 				return _currentProjects;
 			}
-			set { DocumentList.Documents = value.Cast<Document>().ToList(); }
+			set { ProjectList.Projects = value.Cast<Project>().ToList(); }
 		}
 		#endregion
 
@@ -68,27 +68,27 @@ namespace CodeMaker
 
 		#region ComboboxLijst_Subject
 
-		public DocumentList SubjectList
+		public SubjectList SubjectList
 		{
 			get
 			{
-				_subjectList ??= new DocumentList();
+				_subjectList ??= new SubjectList();
 				return _subjectList;
 			}
 			set { _subjectList = value; }
 		}
-		public ObservableCollection<Document> CurrentSubjects
+		public ObservableCollection<Subject> CurrentSubjects
 		{
 			get
 			{
-				_currentSubjects ??= new ObservableCollection<Document>(DocumentList.Documents.Select(s => s).ToList());
+				_currentSubjects??= new ObservableCollection<Subject>(SubjectList.Subjects.Select(s => s).ToList());
 				return _currentSubjects;
 			}
-			set { DocumentList.Documents = value.Cast<Document>().ToList(); }
+			set { SubjectList.Subjects = value.Cast<Subject>().ToList(); }
 		}
 		#endregion ComboboxLijst_Subject
 
-		public Document SelectedProject
+		public Project SelectedProject
 		{
 			get { return _selectedProject; }
 			set { _selectedProject = value; Notify(); }
@@ -99,7 +99,7 @@ namespace CodeMaker
 			set { _selectedDocument = value; Notify(); }
 		}
 		
-		public Document SelectedSubject
+		public Subject SelectedSubject
 		{
 			get { return _selectedSubject; }
 			set { _selectedSubject= value;Notify(); }

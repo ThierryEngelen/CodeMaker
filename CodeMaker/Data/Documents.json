@@ -1,14 +1,17 @@
 ﻿[
   {
     "doctype":"verslag",
+    "doceng":"report",
     "docabr":"RE"
     },
   {
     "doctype":"meetstaat",
-    "docabr":"IE"
+    "doceng":"bill of quantities",
+    "docabr":"BQ"
      },
   {
     "doctype":"bestek",
-    "docabr":"CD"
+    "doceng":"specifications",
+    "docabr":"SP"
     }
 ]
