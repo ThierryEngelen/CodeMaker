@@ -1,0 +1,23 @@
+﻿[
+  {
+    "project":"Antwerpen-Nieuwbouw-2020",
+    "doctype":"verslag",
+    "docabr":"RE",
+    "subjecttype":"stabiliteit",
+    "subjectabr":"STR"
+    },
+  {
+    "project":"Gent-Verbouwing-2020",
+    "doctype":"meetstaat",
+    "docabr":"IE",
+    "subjecttype":"architectuur",
+    "subjectabr":"ARC"
+     },
+  {
+    "project":"Brussel-Restauratie-2020",
+    "doctype":"bestek",
+    "docabr":"CD",
+    "subjecttype":"technieken",
+    "subjectabr":"MEP"
+    }
+]

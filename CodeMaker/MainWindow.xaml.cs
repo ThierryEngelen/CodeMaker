@@ -14,7 +14,7 @@ namespace CodeMaker
     public partial class MainWindow : Window
     {
         private ViewModel _viewModel = null;
-
+          
         public ViewModel MainViewModel
         {
             get { _viewModel ??= new ViewModel(); return _viewModel; }
@@ -28,13 +28,18 @@ namespace CodeMaker
             DataContext = MainViewModel;
         }
 
+        private void Cbx_Project_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Cbx_Project.SelectedItem.ToString();
+        }
         private void Cbx_Document_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
             Cbx_Document.SelectedItem.ToString();
         }
-        private void Cbx_Onderwerp_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Cbx_Subject_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-             Cbx_Onderwerp.SelectedItem.ToString();
+             Cbx_Subject.SelectedItem.ToString();
         }
     }
 }

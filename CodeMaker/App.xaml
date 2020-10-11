@@ -4,10 +4,13 @@
              xmlns:local="clr-namespace:CodeMaker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+
         <!--> Template LABEL GEVULD rechte hoeken<-->
         <Style x:Key="FilledLabel" TargetType="Label">
             <Setter Property="Background" Value="Red"/>
             <Setter Property="Foreground" Value="AntiqueWhite"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="25"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Label">
@@ -18,5 +21,22 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <!--> Template COMBOBOX<-->
+        <Style x:Key="ComboboxStyle" TargetType="ComboBox">
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+
+        <!--> Template TEXTBLOCK<-->
+           <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="DarkGray"/>
+        </Style>
+        
     </Application.Resources>
 </Application>

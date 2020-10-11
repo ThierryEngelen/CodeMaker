@@ -1,11 +1,14 @@
 ﻿[
   {
-    "subjecttype":"architectuur"
+    "subjecttype":"stabiliteit",
+    "subjectabr":"STR"
     },
   {
-    "subjecttype":"stabiliteit"
-    },
+    "subjecttype":"architectuur",
+    "subjectabr":"ARC"
+     },
   {
-    "subjecttype":"technieken"
+    "subjecttype":"technieken",
+    "subjectabr":"MEP"
     }
 ]
